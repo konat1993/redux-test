@@ -1,5 +1,4 @@
 const { REACT_APP_API_URL } = process.env
-console.log("REACT_APP_API_URL ", REACT_APP_API_URL)
 
 const userDataStructure = (data) => {
   return {
