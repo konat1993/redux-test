@@ -1,4 +1,5 @@
 import React from "react";
+import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
 import { SnackbarProvider } from "notistack";
 
 import HomePage from "./pages/Home/HomePage";
@@ -18,13 +19,13 @@ const notistackRef = React.createRef();
 const onClickDismiss = (key) => () => {
   notistackRef.current.closeSnackbar(key);
 };
-
 export const App = () => {
   return (
     <SnackbarProvider
+      hideIconVariant={true}
       maxSnack={3}
       ref={notistackRef}
-      action={(key) => <button onClick={onClickDismiss(key)}>'Dismiss'</button>}
+      action={(key) => <CancelOutlinedIcon className="snackbarIcon" onClick={onClickDismiss(key)}/>}
     >
       <div className="App">
         <Router>

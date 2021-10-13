@@ -1,4 +1,6 @@
 import React from "react";
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
 import { useSnackbar } from "notistack";
 import { useHistory } from "react-router";
 
@@ -27,7 +29,7 @@ export const HomePage = (props) => {
   const onClickReset = () => {
     props.resetUsers();
     props.addMessageLabel({
-      type: "danger",
+      type: "error",
       message: "Users have been reset :)"
     });
     setTimeout(() => {
@@ -102,7 +104,7 @@ export const HomePage = (props) => {
           <Button
             name="reset"
             variant="contained"
-            color="alert"
+            color="error"
             onClick={onClickReset}
           >
             Reset

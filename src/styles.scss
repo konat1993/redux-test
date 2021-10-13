@@ -17,6 +17,19 @@ body {
   background-color: #bdc3c7;
 }
 
+.snackbarIcon {
+  color: rgb(83, 83, 83);
+  cursor: pointer;
+  transition: color 0.2 ease;
+
+    &:hover {
+      color: rgb(35, 35, 35);
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+}
+
 .navBar {
   background-color: #34495e;
   height: 50px;

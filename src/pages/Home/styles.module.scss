@@ -101,7 +101,16 @@
               }
           }
     }
-    
+}
 
-  
+@media (max-height: 500px) {
+  .homeWrapper {
+      min-height: 180px;
+      flex-direction: row;
+    
+    .buttonWrapper {
+      margin: 15px;
+      height: 150px;
+    }
+  }
 }

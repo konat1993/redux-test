@@ -9,7 +9,7 @@ const msgClasses = (type) => {
   return classNames(classes.rootChildWrapper, {
     [classes.info]: type === "info",
     [classes.warning]: type === "warning",
-    [classes.danger]: type === "danger"
+    [classes.error]: type === "error"
   });
 };
 

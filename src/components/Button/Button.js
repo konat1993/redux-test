@@ -13,7 +13,7 @@ const btnClasses = (props) => {
     [classes.secondary]: props.color === "secondary",
     [classes.info]: props.color === "info",
     [classes.warning]: props.color === "warning",
-    [classes.alert]: props.color === "alert"
+    [classes.error ]: props.color === "error"
   });
 };
 
