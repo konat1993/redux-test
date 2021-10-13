@@ -27,7 +27,7 @@ export const useFetch = (fn, deps) => {
         setStatus(false);
       }, 2000);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslisnt-disable-next-line react-hooks/exhaustive-deps
   }, deps);
 
   return [

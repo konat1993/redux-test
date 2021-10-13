@@ -1,4 +1,5 @@
-const URL = "https://api.airtable.com/v0/appDzJ8xYJ64Jhphk/addUserForm";
+const { REACT_APP_API_URL } = process.env
+console.log("REACT_APP_API_URL ", REACT_APP_API_URL)
 
 const userDataStructure = (data) => {
   return {
@@ -26,7 +27,7 @@ const requestConfig = (data) => {
 };
 
 export const postUser = async (data) => {
-  const response = await fetch(URL, requestConfig(data));
+  const response = await fetch(REACT_APP_API_URL, requestConfig(data));
   const responseData = await response.json();
 
   return {

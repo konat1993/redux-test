@@ -16,9 +16,7 @@ export const UsersPage = (props) => {
             return (
               <div
                 key={id}
-                className={`${classes.user} ${classes.user}${
-                  id % 2 === 0 ? "Odd" : "Even"
-                }`}
+                className={`${classes.user} ${id % 2 === 0 ? classes.userOdd : classes.userEven}`}
               >
                 <div>
                   <span>{id + 1}.</span>
