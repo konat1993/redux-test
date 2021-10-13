@@ -1,6 +1,4 @@
 import React from "react";
-import Backdrop from '@mui/material/Backdrop';
-import CircularProgress from '@mui/material/CircularProgress';
 import { useSnackbar } from "notistack";
 import { useHistory } from "react-router";
 
@@ -66,7 +64,7 @@ export const HomePage = (props) => {
           <p className={classes.errorBackdrop}>
             <span>
               <span>ERROR ! ! !</span>
-              <span>Reload Page</span>
+              <span>Reload page and try again</span>
             </span>
           </p>
         )}

@@ -1,18 +1,9 @@
 import React, { useEffect } from "react";
-import classNames from "classnames";
 
-import { Typography } from "../Typography";
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
 
-import classes from "./styles.module.scss";
-
-const msgClasses = (type) => {
-  return classNames(classes.rootChildWrapper, {
-    [classes.info]: type === "info",
-    [classes.warning]: type === "warning",
-    [classes.error]: type === "error"
-  });
-};
-
+import classes from "./styles.module.scss"
 export const Message = (props) => {
   const { msg, type, handleClick, ...otherProps } = props;
   useEffect(() => {
@@ -22,11 +13,14 @@ export const Message = (props) => {
   }, []);
 
   return (
-    <div className={classes.root} {...otherProps}>
-      <div className={msgClasses(type)}>
-        <Typography variant="h3">{msg}</Typography>
-      </div>
-    </div>
+    <div className={classes.root}>
+    <Backdrop
+      sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+      open={true}
+    >
+      <CircularProgress color="inherit" />
+  </Backdrop>
+  </div>
   );
 };
 
