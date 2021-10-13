@@ -1,0 +1,107 @@
+.homeWrapper {
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+
+    .buttonWrapper {
+      background-color: white;
+      width: 300px;
+      height: 200px;
+      margin: 30px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 1px;
+    }
+
+    .loaderBackdrop {
+      background-color: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .alertBackdrop {
+      background-color: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+          span {
+            background-color: #ff3f34;
+            color: white;
+            padding: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 4px;
+          }
+    }
+    .loaderBackdrop {
+      background-color: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+          span {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            width: 250px;
+            height: 250px;
+            font-size: 26px;
+            font-weight: bold;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+    }
+    .errorBackdrop {
+      background-color: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+          > span {
+            background-color: rgba(190, 43, 35, 0.9);
+            color: white;
+            padding: 50px 100px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+              span {
+                padding: 5px 20px;
+              }
+          }
+    }
+    
+
+  
+}

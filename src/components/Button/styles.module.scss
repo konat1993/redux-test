@@ -1,0 +1,56 @@
+.root {
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 4px 10px 4px 10px;
+  transition: background-color 0.35s ease-in-out;
+}
+
+.contained {
+  color: white;
+  box-shadow: 0px 1px 5px 0px #0000001f, 0px 2px 2px 0px #00000024,
+    0px 3px 1px -2px #00000033;
+}
+
+.contained.primary {
+  background-color: #323330;
+}
+
+.contained.primary:hover {
+  background-color: #5b5c59;
+}
+
+.contained.secondary {
+  background-color: #f0db4f;
+}
+
+.contained.secondary:hover {
+  background-color: #f3e272;
+}
+
+.contained.info {
+  background-color: #0984e3;
+}
+.contained.info:hover {
+  background-color: #2395ec;
+}
+.contained.warning {
+  background-color: orange;
+}
+.contained.warning:hover {
+  background-color: #ffae1a;
+}
+.contained.alert {
+  background-color: #ff3f34;
+}
+.contained.alert:hover {
+  background-color: #ff655d;
+}
+.text {
+}
+
+.text:hover {
+  background-color: #ebebea;
+}

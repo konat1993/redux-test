@@ -1,0 +1,50 @@
+.usersPageWrapper {
+  width: 100%;
+  min-height: calc(100vh - 75px);
+  margin-top: 25px;
+
+    h1 {
+      display: inline;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+
+  .usersContainer {
+    border: 3px solid white;
+    border-radius: 3px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    padding: 15px;
+
+      h2 {
+        margin: 10px;
+      }
+
+      .user {
+        padding: 10px;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+
+          span {
+            margin: 0 5px;
+          }
+
+          img {
+            border-radius: 50%;
+          }
+
+          &Odd {
+            background-color: rgb(255, 255, 255);
+          }
+
+          &Even {
+            background-color: rgb(201, 201, 201);
+          }
+      }
+  }
+}
